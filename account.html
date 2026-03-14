@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <!-- Full Page Layout -->
+    <div class="page-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="circle-btn"></div>
+            <button class="nav-btn">Quiz</button>
+            <button class="nav-btn">Recommendation</button>
+            <button class="nav-btn">Recipe</button>
+            <button class="nav-btn">About Us</button>
+            <button class="nav-btn active">Account</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="title">Account</h1>
+
+            <!-- Profile Information -->
+            <section class="profile-info">
+                <h2>Profile Information</h2>
+                <p><strong>Username:</strong> JohnDoe123</p>
+                <p><strong>Email:</strong> john.doe@email.com</p>
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic">
+                <button class="action-btn">Edit Profile</button>
+            </section>
+
+            <!-- Food Preferences -->
+            <section class="preferences">
+                <h2>Food Preferences</h2>
+                <form>
+                    <label for="region">Region:</label>
+                    <select id="region">
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>America</option>
+                    </select>
+
+                    <label for="discount">Student Discount:</label>
+                    <select id="discount">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+
+                    <label for="flavor">Flavor:</label>
+                    <select id="flavor">
+                        <option>Sweet</option>
+                        <option>Spicy</option>
+                        <option>Sour</option>
+                    </select>
+
+                    <label for="diet">Dietary Preference:</label>
+                    <select id="diet">
+                        <option>None</option>
+                        <option>Vegetarian</option>
+                        <option>Vegan</option>
+                    </select>
+
+                    <button class="action-btn">Save Preferences</button>
+                </form>
+            </section>
+
+            <!-- Rewards & Badges -->
+            <section class="rewards">
+                <h2>Rewards & Badges</h2>
+                <div class="badge">Spice Master</div>
+                <div class="badge">Foodie Explorer</div>
+                <div class="badge">Quiz Champion</div>
+                <div class="badge">Healthy Eater</div>
+            </section>
+
+            <!-- Quiz History -->
+            <section class="quiz-history">
+                <h2>Quiz History</h2>
+                <button class="action-btn">Refresh History</button>
+                <button class="action-btn">Clear History</button>
+                <p>No quiz history available. Take a quiz to see your progress!</p>
+            </section>
+
+            <!-- Saved Restaurants -->
+            <section class="saved-restaurants">
+                <h2>Saved Restaurants</h2>
+                <button class="action-btn">Refresh List</button>
+                <button class="action-btn">Clear All</button>
+                <p>No saved restaurants. Save a restaurant after completing a quiz!</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

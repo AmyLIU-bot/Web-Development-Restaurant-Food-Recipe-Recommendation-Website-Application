@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Page</title>
+    <link rel="stylesheet" href="recommendation.css">
+</head>
+<body>
+    <!-- Full Page Layout -->
+    <div class="page-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- My Page Circle Button -->
+            <div class="circle-btn"></div>
+
+            <!-- Sidebar Buttons -->
+            <button class="nav-btn">Quiz</button>
+            <button class="nav-btn active">Recommendation</button>
+            <button class="nav-btn">Recipe</button>
+            <button class="nav-btn">About Us</button>
+            <button class="nav-btn">Account</button> <!-- Added Account Button -->
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <form id="search_bar_form">
+                    <input type="text" placeholder="Search..." id="search_bar_input">
+                    <button type="submit" hidden></button>
+                </form>
+            </div>
+
+            <!-- Category Buttons -->
+            <div class="categories">
+                <button class="category-btn">Region</button>
+                <button class="category-btn">Student Discount</button>
+                <button class="category-btn">Flavor</button>
+                <button class="category-btn">Dietary Preference</button>
+            </div>
+
+            <div class="row">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Region
+                    </button>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        <li class="dropdown-item"><a href="#">Some action</a></li>
+                        <li class="dropdown-item"><a href="#">Some other action</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- The list of recipes returned by the API call -->
+            <ul id="recipe-list"></ul>
+            <!-- Google Map Section -->
+            <div class="map">
+                <!-- Google Maps iframe -->
+                <iframe 
+                    width="100%" 
+                    height="500px" 
+                    style="border:0; border-radius: 10px;" 
+                    loading="lazy" 
+                    allowfullscreen 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCcQMDjEPrA9cCZAHQfPW1n47H4r5Bx4EI&q=Ritsumeikan+Osaka+Ibaraki+Campus">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JS File -->
+    <script src="recommendation.js" defer></script>
+</body>
+</html>

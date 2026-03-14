@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Full Page Layout */
+.page-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5e1d9;
+    width: 200px;
+    padding: 20px 10px;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* My Page Circle Button */
+.circle-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #bf7372;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.circle-btn:hover {
+    background-color: #e2c5be;
+    transform: scale(1.1);
+}
+
+/* Sidebar Buttons */
+.nav-btn {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5b3e70;
+    transition: background-color 0.3s, font-weight 0.3s;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #e2c5be;
+}
+
+.nav-btn.active {
+    background-color: #bf7372;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Search Bar */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Category Buttons */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    background-color: #f5e1d9;
+    color: #5b3e70;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.category-btn:hover {
+    background-color: #e2c5be;
+    transform: scale(1.1);
+}
+
+/* Google Map Section */
+.map {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+.recipeListClass {
+    cursor: pointer; /* Pointer cursor on hover */
+}
